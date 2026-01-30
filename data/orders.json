@@ -1,0 +1,50 @@
+{
+    "navbar": {
+      "logo": "Images/Coin.png",
+      "links": [
+        { "text": "Dashboard", "href": "Dashboard.html" },
+        { "text": "Orders", "href": "Orders.html", "active": true },
+        { "text": "Holdings", "href": "holdings.html" },
+        { "text": "Positions", "href": "position.html" },
+        { "text": "Funds", "href": "funds.html" }
+      ],
+      "userInfo": {
+        "icon": "fas fa-user",
+        "name": "Kiran"
+      }
+    },
+    "content": {
+      "header": "Your Orders",
+      "searchSort": {
+        "placeholder": "Search Orders",
+        "sortOptions": [
+          { "text": "Sort by Status", "value": "status" },
+          { "text": "Sort by Quantity (Ascending)", "value": "quantity-asc" },
+          { "text": "Sort by Quantity (Descending)", "value": "quantity-desc" }
+        ]
+      }
+    },
+    "orders": [
+        { "id": "12345", "item": "Hero Motocorp", "quantity": 500, "status": "Completed" },
+        { "id": "12346", "item": "Infosys", "quantity": 200, "status": "Failed" },
+        { "id": "12347", "item": "Tata Motors", "quantity": 300, "status": "Pending" },
+        { "id": "12348", "item": "Wipro", "quantity": 100, "status": "Completed" },
+        { "id": "12349", "item": "ICICI Bank", "quantity": 150, "status": "Pending" },
+        { "id": "12350", "item": "Reliance Industries", "quantity": 250, "status": "Completed" },
+        { "id": "12351", "item": "HDFC Bank", "quantity": 600, "status": "Failed" },
+        { "id": "12352", "item": "Bajaj Finance", "quantity": 400, "status": "Pending" },
+        { "id": "12353", "item": "Maruti Suzuki", "quantity": 350, "status": "Completed" },
+        { "id": "12354", "item": "Larsen & Toubro", "quantity": 450, "status": "Failed" },
+        { "id": "12355", "item": "Bharti Airtel", "quantity": 500, "status": "Pending" },
+        { "id": "12356", "item": "Axis Bank", "quantity": 200, "status": "Completed" },
+        { "id": "12357", "item": "ITC Limited", "quantity": 550, "status": "Pending" },
+        { "id": "12358", "item": "State Bank of India", "quantity": 750, "status": "Completed" },
+        { "id": "12359", "item": "Tata Consultancy Services", "quantity": 400, "status": "Failed" },
+        { "id": "12360", "item": "Asian Paints", "quantity": 300, "status": "Pending" },
+        { "id": "12361", "item": "Marico", "quantity": 350, "status": "Completed" },
+        { "id": "12362", "item": "Kotak Mahindra Bank", "quantity": 500, "status": "Pending" },
+        { "id": "12363", "item": "Ultratech Cement", "quantity": 600, "status": "Failed" },
+        { "id": "12364", "item": "Sun Pharma", "quantity": 450, "status": "Completed" }
+    ]
+  }
+  

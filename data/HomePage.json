@@ -1,0 +1,188 @@
+{
+    "header": {
+      "img": {
+        "alt": "Innonest Logo",
+        "height": "40",
+        "width": "150",
+        "src": "Final Logo.png",
+        "styles": {
+          "height": "80px"
+        }
+      },
+      "nav": {
+        "links": [
+          {"href": "Login.html", "text": "Login", "styles": {"margin": "15px", "text-decoration": "none", "color": "#333", "font-weight": "500"}},
+          {"href": "SignUppage.html", "text": "Signup", "styles": {"margin": "15px", "text-decoration": "none", "color": "#333", "font-weight": "500"}},
+          {"href": "pricing.html", "text": "Pricing", "styles": {"margin": "15px", "text-decoration": "none", "color": "#333", "font-weight": "500"}},
+          {"href": "Support.html", "text": "Support", "styles": {"margin": "15px", "text-decoration": "none", "color": "#333", "font-weight": "500"}}
+        ],
+        "styles": {
+          "display": "flex",
+          "justify-content": "space-between",
+          "align-items": "center",
+          "padding": "15px",
+          "background-color": "#fff",
+          "border-bottom": "1px solid #eaeaea"
+        }
+      }
+    },
+    "main": {
+      "img": {
+        "alt": "Dashboard Screenshot",
+        "height": "300",
+        "width": "600",
+        "src": "Images/Dashboard.png",
+        "styles": {
+          "max-width": "100%",
+          "height": "auto"
+        }
+      },
+      "h1": {
+        "text": "Invest in everything",
+        "styles": {
+          "font-size": "36px",
+          "margin": "20px 0"
+        }
+      },
+      "p": {
+        "text": "Online platform to invest and trade in stocks.",
+        "styles": {
+          "font-size": "18px",
+          "color": "#666"
+        }
+      },
+      "button": {
+        "class": "btn",
+        "text": "Sign up for free",
+        "link": "SignUppage.html",
+        "styles": {
+          "background-color": "#007bff",
+          "color": "#fff",
+          "padding": "15px 30px",
+          "border": "none",
+          "border-radius": "5px",
+          "font-size": "18px",
+          "cursor": "pointer",
+          "margin-top": "20px"
+        }
+      }
+    },
+    "section_boxes": [
+      {
+        "title": "Trust with confidence",
+        "subsections": [
+          {
+            "h3": "Customer-first always",
+            "p": "That's why 1.5+ crore customers trust Innonest...",
+            "styles": {
+              "margin": "20px"
+            }
+          },
+          {
+            "h3": "No spam or gimmicks",
+            "p": "No gimmicks, spam, 'gamification', or annoying push notifications...",
+            "styles": {
+              "margin": "20px"
+            }
+          },
+          {
+            "h3": "The Innonest universe",
+            "p": "Not just an app, but a whole ecosystem...",
+            "styles": {
+              "margin": "20px"
+            }
+          },
+          {
+            "h3": "Do better with money",
+            "p": "With initiatives like Nudge and Kill Switch...",
+            "styles": {
+              "margin": "20px"
+            }
+          }
+        ],
+        "styles": {
+          "padding": "2px",
+          "border": "10px white",
+          "background-color": "white",
+          "max-width": "600px"
+        }
+      }
+    ],
+    "pricing": [
+      {
+        "price": "₹0",
+        "description": "Free Account Opening",
+        "styles": {
+          "text-align": "center"
+        }
+      },
+      {
+        "price": "₹0",
+        "description": "Free Equity Delivery",
+        "styles": {
+          "text-align": "center"
+        }
+      },
+      {
+        "price": "₹20",
+        "description": "Intraday and F&O",
+        "styles": {
+          "text-align": "center"
+        }
+      }
+    ],
+    "footer": {
+      "img": {
+        "alt": "Innonest Logo",
+        "height": "40",
+        "width": "150",
+        "src": "Final Logo.png",
+        "styles": {
+          "height": "80px"
+        }
+      },
+      "p": {
+        "text": "© 2024, Innonest Broking Ltd. All rights reserved.",
+        "styles": {
+          "font-size": "14px",
+          "color": "#666",
+          "margin": "20px 0"
+        }
+      },
+      "social_links": [
+        {"href": "#", "icon": "fab fa-facebook-f", "styles": {"margin": "0 10px", "color": "#333", "font-size": "20px"}},
+        {"href": "#", "icon": "fab fa-twitter", "styles": {"margin": "0 10px", "color": "#333", "font-size": "20px"}},
+        {"href": "#", "icon": "fab fa-instagram", "styles": {"margin": "0 10px", "color": "#333", "font-size": "20px"}},
+        {"href": "#", "icon": "fab fa-linkedin-in", "styles": {"margin": "0 10px", "color": "#333", "font-size": "20px"}}
+      ],
+      "support": {
+        "text": "Support",
+        "styles": {
+          "margin-top": "20px",
+          "font-size": "16px",
+          "color": "#007bff"
+        }
+      },
+      "address": {
+        "text": "Innonest Broking Ltd., NB105, BML Munjal University, Gurugram(123456)",
+        "styles": {
+          "font-size": "16px",
+          "color": "#666"
+        }
+      }
+    },
+    "no_link": {
+      "styles": {
+        "background-color": "#007bff",
+        "color": "white",
+        "padding": "1px 5px",
+        "font-size": "22px",
+        "border": "none",
+        "text-decoration": "none",
+        "border-radius": "5px",
+        "cursor": "pointer",
+        "transition": "background-color 0.3s ease"
+      }
+    }
+  }
+  
