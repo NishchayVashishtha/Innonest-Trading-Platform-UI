@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .navbar img {
+            height: 50px;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .navbar .nav-links a.active {
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .navbar .user-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .user-info i {
+            margin-right: 5px;
+        }
+
+        /* Content styles */
+        .content {
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .content h2 {
+            margin: 0;
+            color: #333;
+        }
+
+        /* Search and Sort Section */
+        .search-sort {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .search-sort input,
+        .search-sort select {
+            padding: 8px 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Order List Styling */
+        .order-list {
+            margin-top: 30px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .order-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 15px;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .order-item h3 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .order-item .status {
+            padding: 5px 15px;
+            border-radius: 20px;
+            background-color: #ffcc00;
+            color: #333;
+        }
+
+        .order-item .actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .order-item .edit,
+        .order-item .delete {
+            background-color: #f0ad4e;
+            color: white;
+            padding: 5px 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .order-item .delete {
+            background-color: #d9534f;
+        }
+
+        .order-item .edit:hover {
+            background-color: #ec971f;
+        }
+
+        .order-item .delete:hover {
+            background-color: #c9302c;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="navbar" class="navbar"></div>
+
+    <div class="content">
+        <h2 id="header"></h2>
+        <div class="search-sort">
+            <input type="text" id="searchInput" placeholder="Search Orders" onkeyup="handleSearch(event)">
+            <select id="sortSelect" onchange="handleSort(event)"></select>
+        </div>
+        <div id="orderList" class="order-list"></div>
+    </div>
+
+    <script src="orders.js"></script>
+</body>
+</html>

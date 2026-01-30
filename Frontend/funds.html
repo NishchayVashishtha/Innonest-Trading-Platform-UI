@@ -1,0 +1,164 @@
+<html></html>
+<head>
+    <title>Funds Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .shift-down {
+            margin-top: 45px; 
+        }
+        positioned-image {
+            position: relative;
+            top: 50px; /* Adjust the value as needed */
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .header img {
+            height: 40px;
+        }
+        .header nav {
+            display: flex;
+            align-items: center;
+        }
+        .header nav a {
+            margin-left: 80px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        .header nav a.active {
+            background-color: #007bff;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .header .user-info {
+            display: flex;
+            align-items: center;
+        }
+        .header .user-info i {
+            margin-right: 10px;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content h1 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .content .buttons {
+            margin-bottom: 20px;
+        }
+        .content .buttons button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .content .buttons .add-funds {
+            background-color: #28a745;
+            color: #fff;
+        }
+        .content .buttons .withdraw {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .content .equity {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .content .equity i {
+            margin-right: 10px;
+        }
+        .content .equity h2 {
+            font-size: 18px;
+            margin: 0;
+        }
+        .content .table {
+            
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto; 
+            border: 20px solid black;
+            
+            
+            border: 1px solid #c31a1a;
+            border-collapse: collapse;
+        }
+        .content .table th, .content .table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #b11717;
+        }
+        .content .table th {
+            background-color: #f9f9f9;
+            font-weight: bold;
+        }
+        .content .table td {
+            font-size: 16px;
+            color: #ce0909;
+        }
+        .content .table .total {
+            border-top: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Images/Coin.png" alt="Logo">
+        <nav>
+            <a href="Dashboard.html">Dashboard</a>
+            <a href="Orders.html">Orders</a>
+            <a href="holdings.html">Holdings</a>
+            <a href="position.html">Positions</a>
+            <a href="funds.html" class="active">Funds</a>
+        </nav>
+        <div class="user-info">
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-user"></i>
+            <span>Name</span>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Instant, zero-cost fund transfers with <img src= "Images/UPI.png" alt="UPI"  class="positioned-image" width="5%"></h1>
+        <div class="buttons">
+            <button class="add-funds">ADD FUNDS</button>
+            <button class="withdraw">WITHDRAW</button>
+        </div>
+        
+        <table class="table">
+            <tr>
+                <th>Available Margin</th>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <th>Used Margin</th>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <th>Available Cash</th>
+                <td>0.00</td>
+            </tr>
+            <tr class="total">
+                <th>Total Collateral</th>
+                <td>0.00</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

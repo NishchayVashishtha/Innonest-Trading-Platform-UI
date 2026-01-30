@@ -1,0 +1,125 @@
+<html></html>
+ <head>
+  <title>
+   Positions
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .navbar img {
+            height: 50px;
+        }
+        .navbar .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .nav-links a {
+            margin-left: 80px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .navbar .nav-links a.active {
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .navbar .user-info {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .user-info i {
+            margin-right: 5px;
+        }
+        .content {
+            margin-top: 100px;
+        }
+        .content img {
+            width: 50px;
+            height: 50px;
+        }
+        .content p {
+            color: #888888;
+            font-size: 18px;
+        }
+        .content button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .no-link {
+            background-color: #007bff; /* Blue color */
+            color: white; /* Text color */
+            padding: 1px 5px; /* Increase padding for size */
+            font-size: 22px; /* Increase font size */
+            border: none; 
+            text-decoration: none;
+    border-radius: 5px; /* Optional: Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+        }
+  </style>
+ </head>
+ <body>
+  <div class="navbar">
+   <img alt="Company Logo" height="50" src="Images/Coin.png" width="100"/>
+   <div class="nav-links">
+    <a href="Dashboard.html">
+     Dashboard
+    </a>
+    <a href="Orders.html">
+     Orders
+    </a>
+    <a href="holdings.html">
+     Holdings
+    </a>
+    <a class="active" href="position.html">
+     Positions
+    </a>
+    <a href="funds.html">
+     Funds
+    </a>
+   </div>
+   <div class="user-info">
+    <i class="fas fa-bell">
+    </i>
+    <i class="fas fa-user">
+    </i>
+    <span>
+     Name
+    </span>
+   </div>
+  </div>
+  <div class="content">
+   <img alt="Anchor Icon" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-EeOlHg3rxzO7OBytyW4QDT86.png?st=2024-10-01T18%3A53%3A29Z&amp;se=2024-10-01T20%3A53%3A29Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-10-01T18%3A00%3A17Z&amp;ske=2024-10-02T18%3A00%3A17Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=4kTUtSFlbyya4R2bRUeyGvIG8p1fY80%2BN1HXRQ7AOUs%3D" width="50"/>
+   <p>
+    You don’t have any active positions yet !
+   </p>
+   <button class="btn">   
+    <a href="Dashboard.html" style="text-decoration: none;">
+        <div class="no-link">
+       Get Started
+        </div>
+   </a>
+   </button>
+  </div>
+ </body>
+</html>

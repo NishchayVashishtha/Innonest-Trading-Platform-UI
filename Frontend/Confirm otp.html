@@ -1,0 +1,165 @@
+<html>
+ <head>
+  <title>
+   Confirm OTP
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .header img {
+            height: 50px;
+        }
+        .header .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .header .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #000000;
+            font-size: 16px;
+        }
+        .header .nav-links a.signup {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 70px);
+            padding: 20px;
+        }
+        .content .image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .content .form {
+            flex: 1;
+            max-width: 400px;
+            padding: 20px;
+        }
+        .content .form h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .content .form p {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        .content .form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+        }
+        .content .form .continue-btn {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 30%;
+            font-size: 16px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            color: #888888;
+            border-top: 1px solid #e0e0e0;
+        }
+        .no-link {
+            background-color: #007bff; /* Blue color */
+            color: white; /* Text color */
+            padding: 1px 5px; /* Increase padding for size */
+            font-size: 22px; /* Increase font size */
+            border: none; 
+            text-decoration: none;
+    border-radius: 5px; /* Optional: Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <img alt="Innonest Logo" height="50" src= "Images/Image2.png" width="150"/>
+   <div class="nav-links">
+    <a href="Login.html">
+     Login
+    </a>
+    <a class="signup" href="SignUppage.html">
+     Signup
+    </a>
+    <a href="pricing.html">
+     Pricing
+    </a>
+    <a href="Support.html">
+     Support
+    </a>
+    <a href="#">
+     <i class="fas fa-bars">
+     </i>
+    </a>
+   </div>
+  </div>
+  <div class="content">
+   <div class="image">
+    <img alt="Illustration of graph" height="300" src= "Images/Screenshot 2024-10-01 233557.png" width="400"/>
+   </div>
+   <div class="form">
+    <h1>
+     Confirm OTP
+    </h1>
+    <p>
+     Sent to +918954****** (change)
+    </p>
+    <p>
+     Mobile OTP
+    </p>
+    
+     
+     <input id="mobile-number" type="text" placeholder="Enter your OTP" maxlength="6"/>
+    <p>
+     Didn't receive OTP? Resend via
+     <a href="#">
+      SMS
+     </a>
+    </p>
+    <button class="btn">   
+        <a href="Login.html" style="text-decoration: none;">
+            <div class="no-link">
+           Continue
+            </div>
+       </a>
+       </button>
+   </div>
+  </div>
+  <div class="footer">
+   I authorise Innonest to contact me even if my number is registered on DND. I authorise Innonest to fetch my KYC information from the C-KYC registry with my PAN.
+  </div>
+ </body>
+</html>

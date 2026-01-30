@@ -1,0 +1,303 @@
+<html>
+<head>
+    <title>Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+        .sidebar {
+            width: 30%;
+            background-color: #f5f5f5;
+            padding: 20px;
+            box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .logo div {
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+        }
+        .logo div span {
+            font-size: 14px;
+        }
+        .sidebar .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: #e0d7e9;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .sidebar .search-bar input {
+            border: none;
+            background: none;
+            outline: none;
+            color: #333;
+            flex: 1;
+            padding: 5px;
+        }
+        .sidebar .search-bar i {
+            font-size: 20px;
+            color: #888;
+        }
+        .sidebar .stock-list table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .sidebar .stock-list th, .sidebar .stock-list td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        .sidebar .stock-list td {
+            text-align: right;
+        }
+        .content {
+            width: 70%;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+        .header .nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .header .nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            padding: 8px;
+        }
+        .header .nav a.active {
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+        }
+        .header .user {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .header .user i {
+            font-size: 20px;
+        }
+        .header .user span {
+            font-size: 16px;
+        }
+        .dashboard {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .dashboard h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .dashboard .balance {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .balance-item {
+            text-align: center;
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 32%;
+        }
+        .balance-item h2 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .balance-item p {
+            margin: 5px 0;
+            color: #888;
+        }
+        .balance-item .value {
+            color: green;
+            font-weight: bold;
+        }
+        .balance-item .value-negative {
+            color: red;
+        }
+        .dashboard .balance .balance-item h3 {
+            font-size: 18px;
+            color: #007bff;
+            margin-top: 5px;
+        }
+        .chart {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .chart h2 {
+            margin: 0 0 20px 0;
+        }
+        .positions {
+            text-align: right;
+            color: #007bff;
+            cursor: pointer;
+        }
+        .pagination button:hover {
+            background-color: #bbb;
+        }
+        .search-bar input:focus {
+            outline-color: #007bff;
+        }
+        /* New Style for Percentage colors */
+        .positive {
+            color: green;
+            font-weight: bold;
+        }
+        .negative {
+            color: red;
+            font-weight: bold;
+        }
+        .value-positive {
+            color: green;
+        }
+        .value-negative {
+            color: red;
+        }
+        /* Green percentage style for Nifty and Sensex */
+        .percentage-green {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <div>
+                NIFTY50
+                <span class="percentage-green">101214.20</span>
+                <span class="percentage-green" style="text-align: right;">+0.27%</span>
+            </div>
+            <div>
+                SENSEX
+                <span class="percentage-green">32998.68</span>
+                <span class="percentage-green" style="text-align: right;">+0.23%</span>
+            </div>
+        </div>
+        <div class="search-bar">
+            <i class="fas fa-bars"></i>
+            <input placeholder="Search eg. Mcx gold, infy bse, nifty fut" type="text"/>
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="stock-list">
+            <table>
+                <tr>
+                    <th>INFY</th>
+                    <td class="positive">+1.29%</td>
+                    <td class="value-positive">1161.55</td>
+                </tr>
+                <tr>
+                    <th>GMRINFRA</th>
+                    <td class="positive">+1.14%</td>
+                    <td class="value-positive">17.55</td>
+                </tr>
+                <tr>
+                    <th>SBIN</th>
+                    <td class="negative">-0.50%</td>
+                    <td class="value-negative">249.20</td>
+                </tr>
+                <tr>
+                    <th>GTPL</th>
+                    <td class="positive">+0.07%</td>
+                    <td class="value-positive">136.00</td>
+                </tr>
+                <tr>
+                    <th>CANIBK</th>
+                    <td class="positive">+1.29%</td>
+                    <td class="value-positive">252.60</td>
+                </tr>
+                <tr>
+                    <th>NMDC</th>
+                    <td class="negative">-0.25%</td>
+                    <td class="value-negative">118.20</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="content">
+        <div class="header">
+            <div class="nav">
+                <a class="active" href="#">Dashboard</a>
+                <a href="Orders.html">Orders</a>
+                <a href="holdings.html">Holdings</a>
+                <a href="position.html">Positions</a>
+                <a href="funds.html">Funds</a>
+            </div>
+            <div class="user">
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-user"></i>
+                <span>Welcome, Kiran</span>
+            </div>
+        </div>
+        <div class="dashboard">
+            <h1>Hi, Kiran</h1>
+            <div class="balance">
+                <div class="balance-item">
+                    <h2>₹1.02 Cr</h2>
+                    <p>Invested</p>
+                </div>
+                <div class="balance-item">
+                    <h2>₹1.97 Cr</h2>
+                    <p>Equity Holdings</p>
+                </div>
+                <div class="balance-item">
+                    <h2 class="value">₹95 L</h2>
+                    <h3 class="value">(+93.14%)</h3>
+                    <p>Total P&amp;L</p>
+                </div>
+            </div>
+        </div>
+        <div class="chart">
+            <h2>Market Overview</h2>
+            <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+    {
+    "width": "980",
+    "height": "500",
+    "symbol": "BSE:SENSEX",
+    "interval": "D",
+    "timezone": "Asia/Kolkata",
+    "theme": "light",
+    "style": "1",
+    "locale": "en",
+    "allow_symbol_change": true,
+    "calendar": false,
+    "support_host": "https://www.tradingview.com"
+  }
+    </script>
+    <script src="Dashboard.js"></script>
+  </div>
+  <!-- TradingView Widget END -->
+        </div>
+        <div class="positions">Positions</div>
+    </div>
+</body>
+</html>
